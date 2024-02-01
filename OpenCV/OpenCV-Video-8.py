@@ -8,11 +8,26 @@ vid = cv2.VideoWriter("MyVideo.avi",cv2.VideoWriter_fourcc(*'XVID'),10,(640,480)
 
 while True:
     myret, CapFrame =cam.read()
-    cv2.imshow('CapFrame',CapFrame)
+
+
+    mirrored_frame = cv2.flip(CapFrame, 1)
+    # Display the mirrored frame
+    cv2.imshow('Mirrored Camera Feed', mirrored_frame)
+    
+    #uncomment below if your camera is not mirrored.
+    #cv2.imshow('CapFrame',CapFrame)
 
     #gray image
-    grayImg= cv2.cvtColor(CapFrame, cv2.COLOR_BGR2GRAY)
-    cv2.imshow('Gray Image', grayImg)
+    grayImg= cv2.cvtColor(mirrored_frame, cv2.COLOR_BGR2GRAY)
+
+    
+    # Display the mirrored frame
+    cv2.imshow('Aron Gray Image', grayImg)
+    
+    #uncomment below if your camera is not mirrored.
+    #cv2.imshow('CapFrame',CapFrame)
+
+    #cv2.imshow('Gray Image', grayImg)
 
     #write video frame
     vid.write(CapFrame)
