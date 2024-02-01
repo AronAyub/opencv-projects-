@@ -1,7 +1,9 @@
+# image cascade
+
 import numpy as np
 import cv2
 
-img = cv2.imread('BillGates.jpg')
+img = cv2.imread('OpenCV\mypythonsave.png')
 cv2.imshow('img',img)
 cv2.waitKey(0)
 
