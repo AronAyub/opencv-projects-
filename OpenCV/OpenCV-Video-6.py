@@ -1,3 +1,4 @@
+# Create animated RGB image
 import cv2
 import numpy as np
 
@@ -19,7 +20,7 @@ b = 0
 
 
 #Read Second Image
-img2 = cv2.imread('mypython.png')
+img2 = cv2.imread('OpenCV\mypython.png')
 b2,g2,r2 = cv2.split(img2)
 b2_orig,g2_orig,r2_orig = cv2.split(img2)
 cv2.namedWindow("Output")
@@ -45,8 +46,6 @@ while(True):
     r = cv2.getTrackbarPos("Red", "MyImage")
     g = cv2.getTrackbarPos("Green", "MyImage")
     b = cv2.getTrackbarPos("Blue", "MyImage")
-
-
 
     #Reset the trackerbar position
     if k == ord('r'):
