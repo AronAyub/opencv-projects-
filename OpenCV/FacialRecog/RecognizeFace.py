@@ -6,8 +6,6 @@ recognizer.read('trainner/trainner.yml')
 face_Cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml");
 
 
-
-
 cam = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_SIMPLEX
 while True:
