@@ -1,5 +1,6 @@
 
 #Mouse Click Demo
+# mouse click adds boxes on displayed black image
 import cv2
 import numpy as np
 # mouse callback function
