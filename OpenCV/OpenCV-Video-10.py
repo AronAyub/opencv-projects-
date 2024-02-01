@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('CapFrame.jpg')
+img = cv2.imread('OpenCV\aroface.jpg')
 cv2.imshow('img',img)
 cv2.waitKey(0)
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')

@@ -3,7 +3,7 @@
 import numpy as np
 import cv2
 
-img = cv2.imread('OpenCV\mypythonsave.png')
+img = cv2.imread('OpenCV\cup.jpg')
 cv2.imshow('img',img)
 cv2.waitKey(0)
 
