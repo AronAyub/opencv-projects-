@@ -1,10 +1,11 @@
 
 #Read an image, then show the image in a window and destroy on amy key stroke
+# Set the image on screen using matplotlib toolbar
 import cv2
 from matplotlib import pyplot as pyplt
 
 # Load an color image in grayscale
-img = cv2.imread('mypython.png',1)
+img = cv2.imread('OpenCV\mypython.png',1)
 
 #cv2.IMREAD_COLOR : Loads a color image; use 1
 #cv2.IMREAD_GRAYSCALE : Loads image in grayscale mode ; use 0
